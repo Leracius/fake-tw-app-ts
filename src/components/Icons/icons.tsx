@@ -10,14 +10,14 @@ import mongo from '../../assets/mongo.svg'
 
 
 const IconsComp: FC = () => {
-    const logos = [reactLogo, typeLogo, reduxLogo, material, vite, mongo, expressLogo];
+    const logos = [vite, reactLogo, typeLogo, reduxLogo, material, mongo, expressLogo];
   
     return (
       <Card sx={{ p: 1, m: 1 }}>
-        <Grid container spacing={1} justifyContent="space-evenly">
+        <Grid container spacing={1} justifyContent="center" sx={{mb: '4'}}>
           {logos.map((logo, index) => (
-            <Grid item key={index } xs={3} sm={1}>
-              <CardMedia component="img" sx={{ width: '40px' }} image={logo} />
+            <Grid item key={index } sx={{ justifyContent: 'center' }}>
+              <CardMedia component="img" sx={{ width: '30px'}} image={logo} />
             </Grid>
           ))}
         </Grid>
