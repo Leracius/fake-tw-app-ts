@@ -54,7 +54,7 @@ export const TextComponent: FC = () => {
           mt: 2
         }}
       >
-        <TextField type='text' value={nombre} onChange={(e) => setNombre(e.target.value)} sx={{mb: 2}} id="standard-basic" label="Nombre" variant="standard" />
+        <TextField color='primary' type='text' value={nombre} onChange={(e) => setNombre(e.target.value)} sx={{mb: 2}} label="Nombre" variant="standard" />
         <TextField  value={mensaje} onChange={(e) => setMensaje(e.target.value)}
           id="outlined-multiline-static"
           label="Escribe algo"

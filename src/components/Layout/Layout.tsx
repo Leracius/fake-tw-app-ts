@@ -6,7 +6,7 @@ import { Comment, CommentsState } from '../../interfaces/Comment';
 import { startLoading, fetchCommentsSuccess, fetchCommentsError, } from '../../redux/commentSlice'
 import CardComp from '../Card/Card';
 import axios from 'axios'
-
+import IconsComp from '../Icons/icons';
 
 export const Layout: FC = () => {
 
@@ -52,6 +52,7 @@ export const Layout: FC = () => {
             })
           }
         </Grid>
+        <IconsComp/>
     </Container>
   );
 };
