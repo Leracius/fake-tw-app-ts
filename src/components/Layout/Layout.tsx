@@ -6,7 +6,7 @@ import { Comment, CommentsState } from '../../interfaces/Comment';
 import { startLoading, fetchCommentsSuccess, fetchCommentsError, } from '../../redux/commentSlice'
 import CardComp from '../Card/Card';
 import axios from 'axios'
-import Navbar from '../Navbar/NavBar';
+import Navbar from '../Navbar/Navbar';
 
 export const Layout: FC = () => {
 
