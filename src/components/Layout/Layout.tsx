@@ -6,7 +6,7 @@ import { Comment, CommentsState } from '../../interfaces/Comment';
 import { startLoading, fetchCommentsSuccess, fetchCommentsError, } from '../../redux/commentSlice'
 import CardComp from '../Card/Card';
 import axios from 'axios'
-import IconsComp from '../Icons/icons';
+import Navbar from '../Navbar/NavBar';
 
 export const Layout: FC = () => {
 
@@ -39,7 +39,8 @@ export const Layout: FC = () => {
   const commentArray: Comment[] = data.comments || []
 
   return (
-    <Container maxWidth="sm" sx={{ justifyContent: 'center' }}>
+    <Container sx={{ justifyContent: 'center', mt: '80px' }}>
+      <Navbar/>
       <TextComponent/>
         <Grid container spacing={1} direction="column-reverse">
           {
@@ -52,7 +53,6 @@ export const Layout: FC = () => {
             })
           }
         </Grid>
-        <IconsComp/>
     </Container>
   );
 };
